@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.invitation-page {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.photo {
+  max-width: 150px;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.invitation-text h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ffda79;
+}
+
+.invitation-text p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.name-input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #ffda79;
+}
+
+.confirm-button {
+  background: #ffda79;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.confirm-button:hover {
+  background: #ffc107;
+  transform: translateY(-2px);
+}
+
+.pix-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pix-section p {
+  font-size: 0.9em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.pix-section canvas {
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  max-width: 200px;
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #0f0;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .invitation-page {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .photo {
+    max-width: 100px;
+  }
+
+  .invitation-text h1 {
+    font-size: 1.5em;
+  }
+
+  .confirm-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .pix-section {
+    padding: 15px;
+  }
+
+  .pix-section canvas {
+    max-width: 150px;
+  }
+}
