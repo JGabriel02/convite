@@ -14,7 +14,7 @@ const InvitationPage = () => {
   const handleConfirm = async () => {
     if (name.trim()) {
       try {
-        const response = await fetch('http://localhost:5000/confirm', {
+        const response = await fetch('https://convite-lista.vercel.app/confirm', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
