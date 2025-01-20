@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
+/* Aplicando o estilo principal na classe root da página */
+.invitationPage {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
@@ -11,30 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-}
-
-.invitation-page {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
   padding: 20px;
-  max-width: 400px;
-  width: 90%;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 1.5s ease;
-  
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .photo {
@@ -46,19 +22,22 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.invitation-text h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #ffda79;
+.invitationText {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.invitation-text p {
-  font-size: 1em;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.confirmationSection {
+  margin: 15px 0;
 }
 
-.name-input {
+.nameInput {
   margin: 10px 0;
   padding: 10px;
   font-size: 1em;
@@ -70,12 +49,12 @@ body {
   color: #333;
 }
 
-.name-input:focus {
+.nameInput:focus {
   outline: none;
   border-color: #ffda79;
 }
 
-.confirm-button {
+.confirmButton {
   background: #ffda79;
   color: #333;
   padding: 10px 20px;
@@ -87,15 +66,20 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
   max-width: 200px;
-  margin: 0 auto;
 }
 
-.confirm-button:hover {
+.confirmButton:hover {
   background: #ffc107;
   transform: translateY(-2px);
 }
 
-.pix-section {
+.errorMessage {
+  color: #f00;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.pixSection {
   margin-top: 20px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -103,52 +87,14 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.pix-section p {
+.pixSection p {
   font-size: 0.9em;
   margin: 10px 0;
-  color: #fff;
 }
 
-.pix-section canvas {
-  margin: 10px auto;
-  display: block;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  max-width: 200px;
-}
-
-.confirmation-message {
+.confirmationMessage {
   margin-top: 20px;
   font-size: 1.2em;
   color: #0f0;
   font-weight: 600;
-}
-
-@media (max-width: 480px) {
-  .invitation-page {
-    max-width: 90%;
-    padding: 15px;
-  }
-
-  .photo {
-    max-width: 100px;
-  }
-
-  .invitation-text h1 {
-    font-size: 1.5em;
-  }
-
-  .confirm-button {
-    font-size: 0.9em;
-    padding: 8px 16px;
-  }
-
-  .pix-section {
-    padding: 15px;
-  }
-
-  .pix-section canvas {
-    max-width: 150px;
-  }
 }

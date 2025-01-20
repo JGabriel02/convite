@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InvitationPage.css';
+import styles from './InvitationPage.module.css';
 import minhaFoto from '../../img/foto.jpg';
 import { QRCodeCanvas } from 'qrcode.react';
 
@@ -40,9 +40,10 @@ const InvitationPage = () => {
   };
 
   return (
-    <div className="invitation-page">
-      <img src={minhaFoto} alt="Minha foto" className="photo" />
-      <div className="invitation-text">
+    <div className={styles.invitationPage}>
+     
+      <div className={styles.invitationText}>
+      <img src={minhaFoto} alt="Minha foto" className={styles.photo} />
         <h1>Eu tô formando! 🎓</h1>
         <p>
           Depois de muitos códigos, testes e programações, aprendendo, corrigindo bugs e falhas... chegou a hora!
@@ -58,20 +59,20 @@ const InvitationPage = () => {
         {!isConfirmed ? (
           <>
             <p>**Confirma tua presença aqui!**</p>
-            <div className="confirmation-section">
+            <div className={styles.confirmationSection}>
               <input
                 type="text"
-                className="name-input"
+                className={styles.nameInput}
                 placeholder="Digite seu nome"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              <button className="confirm-button" onClick={handleConfirm}>
+              <button className={styles.confirmButton} onClick={handleConfirm}>
                 Confirmar Presença
               </button>
             </div>
-            {error && <p className="error-message">{error}</p>}
-            <div className="pix-section">
+            {error && <p className={styles.errorMessage}>{error}</p>}
+            <div className={styles.pixSection}>
               <p>
                 Ah, tua presença já será o meu maior presente. Mas, se quiser me presentear, faz um Pix! 🤑
               </p>
@@ -80,7 +81,7 @@ const InvitationPage = () => {
             </div>
           </>
         ) : (
-          <p className="confirmation-message">
+          <p className={styles.confirmationMessage}>
             Obrigado, {name}! Sua presença foi confirmada. Te espero lá! 🎉
           </p>
         )}
