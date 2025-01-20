@@ -56,7 +56,7 @@ const InvitationPage = () => {
         <p>
           <strong>🗓 Data:</strong> 22 de fevereiro de 2025<br />
           <strong>📍 Local:</strong> Salão Carmesim<br />
-          <strong>⏰ Horário:</strong> 22h
+          <strong>⏰ Horário:</strong> 20h
         </p>
         {!isConfirmed ? (
           <>
