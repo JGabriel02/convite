@@ -89,6 +89,8 @@ const InvitationPage = () => {
               </p>
               <QRCodeCanvas value={pixLink} size={150} />
               <p>Escaneie o QR Code para me enviar um presente 🎁</p>
+              <p>Caso preferir segue uma chave pix: joaogabrielrocha.dev@gmail.com
+              </p>
             </div>
           </>
         ) : (
