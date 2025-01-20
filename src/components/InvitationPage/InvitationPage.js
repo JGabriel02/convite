@@ -54,10 +54,19 @@ const InvitationPage = () => {
           Estou muito feliz e quero te convidar para comemorar comigo esse momento tão especial.
         </p>
         <p>
-          <strong>🗓 Data:</strong> 22 de fevereiro de 2025<br />
-          <strong>📍 Local:</strong> Salão Carmesim<br />
-          <strong>⏰ Horário:</strong> 20h
-        </p>
+  <strong>🗓 Data:</strong> 22 de fevereiro de 2025<br />
+  <strong>📍 Local:</strong> 
+  <a 
+    href="https://www.google.com/maps?q=Salão+Carmesim" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    style={{ color: '#ffd700', textDecoration: 'underline' }}
+  >
+    Salão Carmesim
+  </a>
+  <br />
+  <strong>⏰ Horário:</strong> 20h
+</p>
         {!isConfirmed ? (
           <>
             <p>**Confirma tua presença aqui!**</p>
