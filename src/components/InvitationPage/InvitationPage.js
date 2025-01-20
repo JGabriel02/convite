@@ -19,16 +19,18 @@ const InvitationPage = () => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ name }),
+          body: JSON.stringify({ nome: name }), // Certifique-se de que a chave é "nome"
         });
-
+  
         if (response.ok) {
           const data = await response.json();
           console.log(data.message); // Mensagem do back-end
           setIsConfirmed(true);
           setError('');
         } else {
-          setError('Erro ao confirmar presença. Tente novamente.');
+          const errorResponse = await response.json();
+          console.error('Erro:', errorResponse.message);
+          setError(errorResponse.message || 'Erro ao confirmar presença.');
         }
       } catch (error) {
         console.error('Erro de conexão:', error);
