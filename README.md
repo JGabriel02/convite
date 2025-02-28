@@ -1,70 +1,104 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 🎓 Convite de Formatura Online
 
-In the project directory, you can run:
+Bem-vindo ao repositório do meu convite de formatura online! Este projeto foi desenvolvido com **React** e **Node.js** para criar uma experiência interativa e divertida para os convidados. O convite simula uma tela de "hackeamento" antes de revelar o convite oficial.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Como funciona?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O convite possui duas telas principais:
 
-### `npm test`
+1. **Tela de "Hackeamento"**:
+   - Um vídeo com códigos é exibido por 5 segundos, simulando uma tela de invasão.
+   - Após o vídeo, uma imagem é exibida com um botão para acessar o convite.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Tela do Convite**:
+   - Exibe informações sobre a formatura (data, local, horário).
+   - Permite que o convidado confirme presença.
+   - Inclui um QR Code e chave PIX para presentes (opcional).
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tecnologias utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Front-end**:
+  - React
+  - React Router DOM (para navegação entre telas)
+  - QRCode.react (para gerar o QR Code do PIX) - Não está mais incluso no projeto
+  - CSS Modules (para estilização)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Back-end**:
+  - Node.js (para confirmação de presença)
 
-### `npm run eject`
+- **Outras dependências**:
+  - CORS (para permitir requisições entre front-end e back-end)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📥 Como rodar o projeto localmente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Siga os passos abaixo para rodar o projeto na sua máquina:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/JGabriel02/convite.git
+   cd convite
+   ```
 
-## Learn More
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Inicie o servidor de desenvolvimento**:
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Acesse o projeto**:
+   Abra o navegador e acesse `http://localhost:3000`.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🖼 Telas do projeto
 
-### Analyzing the Bundle Size
+### Tela de "Hackeamento"
+![Tela de Hackeamento](https://github.com/user-attachments/assets/2c5e2f7d-3117-4e42-9bbe-575bd15472b5)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Tela do Convite
+![Tela do Convite](https://github.com/user-attachments/assets/dcbb92a3-607a-4118-8df2-128bd57f0070)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔧 Como contribuir
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Se você quiser contribuir para o projeto, siga os passos abaixo:
 
-### Deployment
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça commit das suas alterações:
+   ```bash
+   git commit -m 'Adicionando nova feature'
+   ```
+4. Envie as alterações para o repositório remoto:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um pull request no GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🙌 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **João Gabriel da Rocha**  
+  - GitHub: [JGabriel02](https://github.com/JGabriel02)  
+  - E-mail: joaogabrielrocha.dev@gmail.com  
+
+---
+
