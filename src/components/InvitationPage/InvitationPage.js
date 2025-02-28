@@ -8,8 +8,6 @@ const InvitationPage = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [error, setError] = useState('');
 
-  const pixKey = "joaogabrielrocha.dev@gmail.com"; // Substitua pela sua chave Pix
-  const pixLink = `00020126520014BR.GOV.BCB.PIX0130${pixKey}5204000053039865802BR5925JOAO GABRIEL DA ROCHA DA 6012PORTO ALEGRE622605223ipuAYnyYs3iIrypldGxXQ6304CE3B`;
 
   const handleConfirm = async () => {
     if (name.trim()) {
@@ -19,12 +17,12 @@ const InvitationPage = () => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ nome: name }), // Certifique-se de que a chave é "nome"
+          body: JSON.stringify({ nome: name }), 
         });
   
         if (response.ok) {
           const data = await response.json();
-          console.log(data.message); // Mensagem do back-end
+          console.log(data.message); 
           setIsConfirmed(true);
           setError('');
         } else {
@@ -87,9 +85,6 @@ const InvitationPage = () => {
               <p>
                 Ah, tua presença já será o meu maior presente. Mas, se quiser me presentear, faz um Pix! 🤑
               </p>
-              <QRCodeCanvas value={pixLink} size={150} />
-              <p>Escaneie o QR Code para me enviar um presente 🎁</p>
-              <p>Caso preferir segue uma chave pix: joaogabrielrocha.dev@gmail.com
               </p>
             </div>
           </>
