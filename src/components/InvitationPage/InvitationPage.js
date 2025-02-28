@@ -8,6 +8,8 @@ const InvitationPage = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [error, setError] = useState('');
 
+  const pixKey = ""; // Substitua pela sua chave Pix
+  const pixLink = ``;
 
   const handleConfirm = async () => {
     if (name.trim()) {
@@ -17,12 +19,12 @@ const InvitationPage = () => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ nome: name }), 
+          body: JSON.stringify({ nome: name }), // Certifique-se de que a chave é "nome"
         });
   
         if (response.ok) {
           const data = await response.json();
-          console.log(data.message); 
+          console.log(data.message); // Mensagem do back-end
           setIsConfirmed(true);
           setError('');
         } else {
@@ -85,6 +87,9 @@ const InvitationPage = () => {
               <p>
                 Ah, tua presença já será o meu maior presente. Mas, se quiser me presentear, faz um Pix! 🤑
               </p>
+              <QRCodeCanvas value={pixLink} size={150} />
+              <p>Escaneie o QR Code para me enviar um presente 🎁</p>
+              <p>Caso preferir segue uma chave pix: 
               </p>
             </div>
           </>
